@@ -1,0 +1,29 @@
+.galeria {
+    width: 60%;
+    height: 25rem;
+    margin: 1rem auto;
+    padding: 2rem 0 0 3rem;
+    justify-content: space-evenly;
+    @include caja;
+    &__foto-principal {
+        float: left;
+        margin-right: 1rem;
+    }
+    &__fotos-adicionales {
+        width: 90%;
+    }
+    &__fotos-adicionales img {
+        height: 7rem;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    h2 {
+        margin-bottom: 1rem;
+        font-weight: 600;
+        font-size: 2rem;
+        @include titulos($Fuente2);
+    }
+    img {
+        border-radius: 1rem;
+    }
+}

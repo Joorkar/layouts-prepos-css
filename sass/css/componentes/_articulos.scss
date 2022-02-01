@@ -1,0 +1,29 @@
+.articulos {
+    width: 50%;
+    padding: 10rem 10rem 0 10rem;
+    background-color: $color-primario;
+}
+
+.articulo {
+    margin-bottom: 7.5rem;
+    border-bottom: 3px solid $color-secundario;
+    &__categoria {
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: $color-secundario;
+        @include titulos($Fuente2);
+    }
+    &__titulo {
+        font-size: 2rem;
+        color: $color-claro;
+        @include titulos($Fuente2);
+    }
+    &__descripcion {
+        margin-bottom: 3rem;
+        padding-right: 10rem;
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+        color: get-opacity($color-claro, 0.50);
+        @include titulos($Fuente1)
+    }
+}

@@ -1,0 +1,25 @@
+.ubicacion--perfil {
+	width: 50%;
+	height: 9rem;
+	margin: 3rem auto 0 auto;
+	padding: 2rem 0 0 5rem;
+	margin-bottom: 3rem;
+	@include caja;
+	i {
+		display: block;
+		float: left;
+		padding-right: 1rem;
+		font-size: 4rem;
+		color: $color-variacion;
+	}
+	h2 {
+		font-weight: 600;
+		font-size: 2rem;
+		@include titulos($Fuente2);
+	}
+	h3 {
+		font-size: 1.2rem;
+		@include titulos($Fuente2);
+		color: get-opacity($color-primario, 0.50);
+	}
+}
